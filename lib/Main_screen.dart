@@ -193,7 +193,7 @@ class homeBody extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
 
                           children: [
-                            Work_Container_Icon(),
+                            Container_Icon(color: Colors.black,icon: myassets_icons.bag_icon,),
                             SizedBox(width: 20),
                             Text("Work Task"),
                           ],
@@ -237,7 +237,7 @@ class homeBody extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
 
                         children: [
-                          Person_Container_Icon(),
+                          Container_Icon(color: Colors.black,icon: myassets_icons.bag_icon,),
                           SizedBox(width: 20),
                           Text("Work Task"),
                         ],
@@ -280,7 +280,7 @@ class homeBody extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
 
                         children: [
-                          home_container_icon(),
+                          Container_Icon(color: Color(0xffFF0084), icon: myassets_icons.home_icon),
                           SizedBox(width: 20),
                           Text("Work Task",style: TextStyle(fontFamily: fonts.lexendDeca,fontWeight: FontWeight.w500),),
                         ],
@@ -323,7 +323,7 @@ class homeBody extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Work_Container_Icon(),
+                          Container_Icon(color: Color(0xff149954),icon: myassets_icons.person_icon,),
                           SizedBox(width: 20),
                           Text("Work Task"),
                         ],
@@ -350,70 +350,24 @@ class homeBody extends StatelessWidget {
     );
   }
 }
-class Work_Container_Icon extends StatelessWidget {
-  const Work_Container_Icon({super.key});
-
+class Container_Icon extends StatelessWidget {
+  const Container_Icon({super.key, required this.color,required this.icon});
+final Color color;
+final String? icon;
   @override
   Widget build(BuildContext context) {
     return Container(
       width: 25,
       height: 25,
       decoration: BoxDecoration(
-        color: Color(0xff149954),
+        color: color,
         borderRadius: BorderRadius.circular(3),
       ),
       child:Padding(
         padding: const EdgeInsets.all(3.0),
         child: SvgPicture.asset(
-          myassets_icons.bag_icon,
-          // width: 15,
-          // height: 15,
-          fit: BoxFit.fill,
-        ),
-      ),
-    );
-  }
-}
-class Person_Container_Icon extends StatelessWidget {
-  const Person_Container_Icon({super.key});
+          icon??"no image",
 
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 25,
-      height: 25,
-      decoration: BoxDecoration(
-        color: Colors.black,
-        borderRadius: BorderRadius.circular(3),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.all(3.0),
-        child: SvgPicture.asset(
-          myassets_icons.person_icon,
-          fit: BoxFit.fill,
-        ),
-      ),
-    );
-  }
-}
-class home_container_icon extends StatelessWidget {
-  const home_container_icon({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return  Container(
-      width: 25,
-      height: 25,
-      decoration: BoxDecoration(
-        color: Color(0xffFF0084),
-        borderRadius: BorderRadius.circular(3),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.all(3.0),
-        child: SvgPicture.asset(
-          myassets_icons.home_icon,
-          // width: 15,
-          // height: 15,
           fit: BoxFit.fill,
         ),
       ),

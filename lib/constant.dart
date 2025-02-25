@@ -4,13 +4,20 @@ abstract class myColor{
 
 }
 abstract class myassets_icons{
-  static const String person_icon="asseds/images/Icons/Person.svg";
-  static const String backRow_icon="asseds/images/Icons/iconamoon_arrow-up-2-thin.svg";
-  static const String bag_icon="asseds/images/Icons/bag_icon.svg";
-  static const String home_icon="asseds/images/Icons/home_icon.svg";
-  static const String delet_icon="asseds/images/Icons/delet_icon.svg";
-  static const String date_icon="asseds/images/Icons/date_icon.svg";
-  static const String home_icon2="asseds/images/Icons/home_icon2.svg";
+  static const String _baseUrl="asseds/images/Icons/";
+  static const String person_icon="${_baseUrl}Person.svg";
+  static const String backRow_icon="${_baseUrl}iconamoon_arrow-up-2-thin.svg";
+  static const String bag_icon="${_baseUrl}bag_icon.svg";
+  static const String home_icon="${_baseUrl}home_icon.svg";
+  static const String delet_icon="${_baseUrl}delet_icon.svg";
+  static const String date_icon="${_baseUrl}date_icon.svg";
+  static const String home_icon2="${_baseUrl}home_icon2.svg";
+  static const String calendar_icon="${_baseUrl}calendar.svg";
+  static const String history_icon="${_baseUrl}iconamoon_history-thin.svg";
+  static const String user_icon="${_baseUrl}user.png";
+
+
+
 }
 abstract class fonts {
   static const String lexendDeca = 'Lexend_Deca';

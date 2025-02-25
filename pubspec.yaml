@@ -28,6 +28,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  dropdown_button2: ^2.3.9
   flutter:
     sdk: flutter
 
@@ -68,6 +69,10 @@ flutter:
     - asseds/images/Icons/delet_icon.svg
     - asseds/images/Icons/home_icon2.svg
     - asseds/images/Icons/date_icon.svg
+    - asseds/images/Icons/calendar.svg
+    - asseds/images/flag_Images.png
+    - asseds/images/Icons/user.png
+    - asseds/images/Icons/iconamoon_history-thin.svg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Edit_screen.dart';
-import 'Main_screen.dart';
+import 'package:untitled4/drop.dart';
 import 'constant.dart';
 void main() {
   runApp(myApp());
@@ -10,12 +9,13 @@ class myApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+
       theme: ThemeData(
         scaffoldBackgroundColor: myColor.bacgroundColor,
         appBarTheme: AppBarTheme(color: Color(0xffF3F5F4)),
       ),
       debugShowCheckedModeBanner: false,
-      home: editScreen(),
+      home: drop(),
     );
   }
 }
